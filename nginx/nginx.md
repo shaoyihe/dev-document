@@ -12,12 +12,10 @@
         server 127.0.0.1:3004 ;
         server 127.0.0.1:3005 ;
     }
-
     server {
         listen       8080;
         #目标host限制
         server_name  order.mock-taobao.com;
-
         #charset koi8-r;
 
         # access_log  logs/host.access.log;
