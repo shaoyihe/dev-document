@@ -6,7 +6,6 @@
 具体文件在sample/nginx1.conf，复制重写你的`nginx.conf`，或者使用
 `nginx -c 下载的文件位置`。关键修改位置：
 
-
     设置负载均衡策略
     upstream order {
         server 127.0.0.1:3003 ;
