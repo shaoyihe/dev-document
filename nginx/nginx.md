@@ -6,6 +6,7 @@
 具体文件在sample/nginx1.conf，复制重写你的`nginx.conf`，或者使用
 `nginx -c 下载的文件位置`。关键修改位置：
 
+```
     设置负载均衡策略
     upstream order {
         server 127.0.0.1:3003 ;
@@ -25,7 +26,7 @@
             #设置反向代理
             proxy_pass http://order;
         }
-
+```
 
 *  模拟目标host
 
