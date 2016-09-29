@@ -7,10 +7,9 @@ PORT = ENV['PORT']
 set :port, PORT
 
 get '/hello' do
-  for_test = 10000.times.inject({}) do |m, k|
+  10000.times.inject({port: PORT}) do |m, k|
     m[k] = k
     m
   end.to_s
 
-  {port: PORT, test: for_test}.to_s
 end
