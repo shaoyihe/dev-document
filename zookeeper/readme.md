@@ -62,7 +62,7 @@ numChildren = 0
    localhost:8083
 ```
 
-** 启动
+* 启动
 
 安装gem包.`gem install sinatra; gem install json; gem install zk; gem install httparty;`
 下载`sample/client.rb和sample/server.rb`.文件
